@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: yelb 
+  name: yelb
 ---
 apiVersion: v1
 kind: Service
@@ -79,7 +79,7 @@ metadata:
     app: yelb-ui
     tier: frontend
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: yelb-ui
